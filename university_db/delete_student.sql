@@ -5,5 +5,6 @@ DELETE FROM `Students`
 WHERE `FirstName` = 'Charlie' AND `LastName` = 'Lee'; -- More robust WHERE clause
 COMMIT;
 SET SQL_SAFE_UPDATES = 1;
+SELECT StudentID, FirstName, LastName FROM Students ORDER BY StudentID;
 
 SELECT * FROM Students;
