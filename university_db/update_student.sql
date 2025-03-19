@@ -1,8 +1,11 @@
-USE UniversityDB;
+USE `UniversityDB`;
 SET SQL_SAFE_UPDATES = 0;
--- Update Bob Johnson's email
-UPDATE Students
-SET Email = 'bob.j@example.com'
-WHERE FirstName = 'Bob' AND LastName = 'Johnson';
-
-SELECT * FROM Students WHERE FirstName='Bob' AND LastName='Johnson';
+-- Step 2: Update the Email for Bob Johnson
+UPDATE `Students`
+SET `Email` = 'bob.j@example.com'
+WHERE `FirstName` = 'Bob' AND `LastName` = 'Johnson';  -- More robust WHERE clause
+SET SQL_SAFE_UPDATES = 1;
+-- Alternative using StudentID (preferred if you know the ID):
+-- UPDATE `Students`
+-- SET `Email` = 'bob.j@example.com'
+-- WHERE `StudentID` = 2;  -- Replace 2 with Bob's actual StudentID
