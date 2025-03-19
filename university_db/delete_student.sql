@@ -6,3 +6,4 @@ WHERE `FirstName` = 'Charlie' AND `LastName` = 'Lee'; -- More robust WHERE claus
 COMMIT;
 SET SQL_SAFE_UPDATES = 1;
 
+SELECT * FROM Students;
