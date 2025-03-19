@@ -4,6 +4,7 @@ SET SQL_SAFE_UPDATES = 0;
 UPDATE `Students`
 SET `Email` = 'bob.j@example.com'
 WHERE `FirstName` = 'Bob' AND `LastName` = 'Johnson';  -- More robust WHERE clause
+COMMIT;
 SET SQL_SAFE_UPDATES = 1;
 -- Alternative using StudentID (preferred if you know the ID):
 -- UPDATE `Students`
